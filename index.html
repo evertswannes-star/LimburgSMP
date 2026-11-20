@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Limburg SMP | Minecraft Community</title>
+    <meta name="description" content="Welkom bij Limburg SMP! Ontdek onze Minecraft servers, shop en community.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATIE -->
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <span>LIMBURG</span> SMP
+        </a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#servers">Servers</a>
+            <a href="#shop">Shop</a>
+            <a href="#staff">Staff</a>
+            <a href="#regels">Regels</a>
+            <a href="#discord">Discord</a>
+        </div>
+
+        <button class="mobile-menu" onclick="toggleMenu()">
+            ☰
+        </button>
+    </nav>
+
+
+    <!-- HOME -->
+    <header class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="status">
+                ● WELKOM BIJ LIMBURG SMP
+            </div>
+
+            <h1>
+                JOUW AVONTUUR<br>
+                <span>BEGINT HIER</span>
+            </h1>
+
+            <p>
+                Ontdek onze Minecraft servers, speel samen
+                met vrienden en bouw jouw eigen avontuur.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#servers" class="btn primary">
+                    ONTDEK ONZE SERVERS
+                </a>
+
+                <a href="#discord" class="btn secondary">
+                    WORD LID VAN DISCORD
+                </a>
+            </div>
+
+            <div class="ip-box">
+                <div>
+                    <small>JAVA SERVER IP</small>
+                    <p id="server-ip">play.limburgsmp.eu:38008</p>
+                </div>
+
+                <button onclick="copyIP()">
+                    KOPIEER IP
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+<!-- SERVERS -->
+<section class="section" id="servers">
+
+    <div class="section-heading">
+        <span>ONS NETWERK</span>
+        <h2>ONZE SERVERS</h2>
+        <p>Ontdek alle spelmodi van Limburg SMP.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-icon">⚔️</div>
+            <h3>Limburg SMP</h3>
+            <p>Overleef en beleef avonturen met andere spelers.</p>
+            <span class="tag">SURVIVAL</span>
+            <div class="server-ip">play.limburgsmp.eu:38008</div>
+            <button class="ip-button" onclick="copyServerIP('play.limburgsmp.eu:38008')">KOPIEER IP</button>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🔥</div>
+            <h3>Hardcore</h3>
+            <p>Een uitdagende survivalervaring waarin elke keuze telt.</p>
+            <span class="tag">HARDCORE</span>
+            <div class="server-ip">play.limburgsmp.eu:38008</div>
+            <button class="ip-button" onclick="copyServerIP('play.limburgsmp.eu:38008')">KOPIEER IP</button>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🏝️</div>
+            <h3>Limburg OneBlock</h3>
+            <p>Begin op één blok en bouw jouw eigen eiland uit!</p>
+            <span class="tag">ONEBLOCK</span>
+            <div class="server-ip">limburgoneblock.mc-host.eu:25718</div>
+            <button class="ip-button" onclick="copyServerIP('limburgoneblock.mc-host.eu:25718')">KOPIEER IP</button>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🏹</div>
+            <h3>FFA</h3>
+            <p>Test jouw vaardigheden tegen andere spelers.</p>
+            <span class="tag">PVP</span>
+            <div class="server-ip">play.limburgsmp.eu:38008</div>
+            <button class="ip-button" onclick="copyServerIP('play.limburgsmp.eu:38008')">KOPIEER IP</button>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>SkyBlock</h3>
+            <p>Begin op een klein eiland en bouw jouw eigen wereld.</p>
+            <span class="tag">SKYBLOCK</span>
+            <div class="server-ip">play.limburgsmp.eu:38008</div>
+            <button class="ip-button" onclick="copyServerIP('play.limburgsmp.eu:38008')">KOPIEER IP</button>
+        </div>
+
+    </div>
+</section>
+
+    <!-- SHOP -->
+    <section class="section dark-section" id="shop">
+
+        <div class="section-heading">
+            <span>LIMBURG SMP STORE</span>
+            <h2>ONZE SHOP</h2>
+            <p>Ontdek binnenkort onze ranks en exclusieve voordelen.</p>
+        </div>
+
+        <div class="shop-box">
+            <div class="card-icon">💎</div>
+            <h3>BINNENKORT BESCHIKBAAR</h3>
+            <p>Onze webshop wordt binnenkort geopend!</p>
+        </div>
+
+    </section>
+
+
+
+
+<!-- FOUNDERS -->
+<section class="section" id="staff">
+
+    <div class="section-heading">
+        <span>DE EIGENAARS VAN LIMBURG SMP</span>
+        <h2>OUR FOUNDERS</h2>
+        <p>Maak kennis met de founders van Limburg SMP.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card staff-card">
+            <div class="staff-avatar">👑</div>
+            <h3>Wannes11</h3>
+            <span class="tag">FOUNDER</span>
+        </div>
+
+        <div class="card staff-card">
+            <div class="staff-avatar">👑</div>
+            <h3>Itz_milanmc</h3>
+            <span class="tag">FOUNDER</span>
+        </div>
+
+        <div class="card staff-card">
+            <div class="staff-avatar">👑</div>
+            <h3>belastingdienst</h3>
+            <span class="tag">FOUNDER</span>
+        </div>
+
+        <div class="card staff-card">
+            <div class="staff-avatar">👑</div>
+            <h3>poetin</h3>
+            <span class="tag">FOUNDER</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REGELS -->
+<section class="section dark-section" id="regels">
+
+    <div class="section-heading">
+        <span>FAIR PLAY</span>
+        <h2>SERVER REGELS</h2>
+        <p>Speel eerlijk. Respecteer elkaar. Veel plezier!</p>
+    </div>
+
+    <div class="rules-list">
+
+        <div class="rule">
+            <strong>01. Geen cheats</strong><br>
+            Hacks, X-Ray, KillAura, Fly, AutoClicker en andere oneerlijke hulpmiddelen zijn verboden.
+        </div>
+
+        <div class="rule">
+            <strong>02. Geen oneerlijke mods</strong><br>
+            Geen mods die automatisch spelen, door muren kijken of PvP-voordelen geven.
+        </div>
+
+        <div class="rule">
+            <strong>03. Geen exploits</strong><br>
+            Misbruik van bugs, glitches en duplicatie is verboden.
+        </div>
+
+        <div class="rule">
+            <strong>04. Toegestane mods</strong><br>
+            Sodium, Lithium, Iris Shaders, Fabric API, performance- en cosmetische mods zijn toegestaan.
+        </div>
+
+        <div class="rule">
+            <strong>05. Twijfel? Vraag staff!</strong><br>
+            Weet je niet of een mod toegestaan is? Vraag het eerst aan een stafflid.
+        </div>
+
+    </div>
+
+    <div class="rules-warning">
+        ⚠️ CHEAT NIET! Uiteindelijk word je toch gepakt.
+        <br><br>
+        <strong>Iedereen speelt onder dezelfde regels. Houd het eerlijk!</strong>
+    </div>
+
+</section>
+
+    <!-- DISCORD -->
+    <section class="discord-section" id="discord">
+
+        <span>WORD LID VAN ONZE COMMUNITY</span>
+
+        <h2>JOIN LIMBURG SMP!</h2>
+
+        <p>
+            Ontmoet andere spelers, blijf op de hoogte
+            en mis geen enkel evenement.
+        </p>
+
+        <a href="#" id="discord-link" class="btn primary">
+            JOIN ONZE DISCORD
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>LIMBURG SMP</h3>
+        <p>© <span id="year"></span> Limburg SMP. Alle rechten voorbehouden.</p>
+        <p>Minecraft is eigendom van Mojang Studios.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
